@@ -1,0 +1,78 @@
+@mixin breakpoint($bp) {
+
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  } 
+  
+@if $bp == tablethorizontal {
+  @media (min-width: $bp-tablet-horizontal) {
+    @content;
+    }
+  } 
+
+@if $bp == desktop {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+} 
+
+@if $bp == desktopxl {
+  @media (min-width: $bp-desktop-xl) {
+    @content;
+}
+} 
+}
+
+@mixin reset-link() {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+@mixin button-main($bg-color1: $black, $bg-color2:$brown, $color: $white) {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, $bg-color1 81%, $bg-color2 19%);
+  color: $color;
+  font-weight: 800;
+  padding: 15px;
+  letter-spacing: 4px;
+  gap: 21px;
+ 
+  &:hover {
+    background-image: linear-gradient(to right, $bg-color2 81%, $bg-color1 19%);
+
+  }
+}
+
+@mixin button-home($bg-color1: $black, $bg-color2:$brown, $color: $white){
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, $bg-color2 20%,20%, $bg-color1 80%);
+  color: $color;
+  font-weight: 800;
+  letter-spacing: 4px;
+  gap: 21px;
+  padding: 15px 20px;
+  font-size: 20px;
+  width: 248px;
+  &:hover {
+    background-image: linear-gradient(to right, $bg-color1 20%,20%, $bg-color2 80%);
+
+  }
+
+} 
+
+@mixin phrases {
+  font-size: 18px;
+  color: $grey;
+  line-height: 28px;
+  font-family: $secundary-font;
+  font-weight: 350;
+  margin-bottom: 32px;
+
+}

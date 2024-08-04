@@ -1,0 +1,106 @@
+.images {
+    margin-bottom: 120px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @include breakpoint(tablet){
+            display: grid;
+            grid-template-columns: 58% 40%;
+            grid-area: 40% 60%;
+            gap: 11px;
+        }
+        @include breakpoint(desktop){
+            gap: 30px;
+            grid-template-columns: 56% 1fr;
+        }
+    }
+
+    .image1 {
+        @include breakpoint(tablet){
+            grid-area: 1 / 1 / span 2/ span 1;
+        }
+       img {
+        width: 100%;
+        @include breakpoint(tablet) {
+            display: none;
+            
+            width: 100%;
+        }
+       }
+       .img-tablet1 {
+        display: none;
+        @include breakpoint(tablet){
+            display: block;
+            width: 100%;
+        }
+        @include breakpoint(desktop){
+            display: none;
+        }
+       }
+
+       .img-desktop1 {
+        display: none;
+        @include breakpoint(desktop){
+            display: block;
+            width: 100%;
+        }
+       }
+    }
+
+    .image2 {
+        @include breakpoint(tablet){
+            grid-area: 1/ 2/ span 1 / span 1;
+            max-height: 280px;
+        }
+        img {
+            width: 100%;
+            @include breakpoint(tablet){
+                display: none;
+            }
+        }
+        .img-tablet2 {
+            display: none;
+            @include breakpoint(tablet){
+                display: block;
+                width: 100%;
+               
+            }
+            @include breakpoint(desktop){
+                display: none;
+            }
+        }
+
+        .img-desktop2 {
+            display: none;
+            @include breakpoint(desktop){
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .information {
+        background-color: $black;
+        padding: 48px 24px;
+       @include breakpoint(tablet){
+        grid-area: 2 / 2 / span 1 / span 1;
+       }
+       @include breakpoint(desktop){
+        padding: 29px;
+       }
+        h2 {
+            color: $white;
+            font-size: 50px;
+            font-weight: 900;
+            margin-bottom: 24px;
+        }
+
+        p {
+            @include phrases();
+            color: $white;
+            margin-bottom: 0;
+        }
+    }
+}

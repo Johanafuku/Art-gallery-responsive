@@ -1,0 +1,19 @@
+.button-main {
+    @include reset-link();
+    @include button-main();
+}
+
+.button-home {
+    @include reset-link();
+    @include button-home();
+}
+
+.arrow {
+    width: 8px;
+}
+
+.arrow1 {
+    transform: rotate(180deg);
+    width: 4.5%;
+}
+

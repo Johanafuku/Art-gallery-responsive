@@ -1,0 +1,14 @@
+.container {
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @include breakpoint(tablet) {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    @include breakpoint(desktop) {
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+}

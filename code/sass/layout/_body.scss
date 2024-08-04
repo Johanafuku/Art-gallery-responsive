@@ -1,0 +1,21 @@
+body {
+    @include breakpoint(tablet) {
+    background-image: url('/img/tablet/header-tablet2x.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 437px;
+
+    }
+    @include breakpoint(desktop) {
+        background-image: url('/img/desktop/header-desktop.png');
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 820px;
+    }
+    
+}
+
+.home-page {
+    background-image: none;
+}
+

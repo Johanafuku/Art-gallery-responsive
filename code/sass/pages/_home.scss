@@ -1,0 +1,55 @@
+.home-information {
+    margin-top: 496px;
+    @include breakpoint(tablethorizontal) {
+        margin-top: 728px;
+    }
+    @include breakpoint(desktop){
+        margin-top: 438px;
+    }
+    .container {
+        margin: 0;
+        background-color: $black;
+        padding: 48px 16px;
+        @include breakpoint(tablet){
+            display: flex;
+            gap: 68px;
+            padding: 80px 40px;
+        }
+        @include breakpoint(desktop){
+            padding: 80px 140px;
+            gap: 220px;
+        }
+        h2 {
+            color: $white;
+            font-weight: 900;
+            font-size: 50px;
+            margin-bottom: 48px;  
+            @include breakpoint(desktop){
+                font-size: 60px;
+                line-height: 65px;
+            }
+        }
+
+        h3 {
+            color: $brown;
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .home-address {
+            display: flex;
+            flex-direction: column;
+            color: $white;
+            font-family: $secundary-font;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .home-info {
+            @include phrases();
+            color: $white;
+            margin-bottom: 0;
+        }
+    }
+}
