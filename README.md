@@ -2,6 +2,17 @@
 
 Another responsive proyect of a microsite for an art gallery. It was built with HTML, Sass, and vite to compile. 👾
 
+## Previews:
+- Mobile:
+<img src='/code/img/preview_mobile.png' width='60%'>
+<img src='/code/img/preview_mobile_location.png' width='60%'>
+
+- Tablet:
+<img src='/code/img/preview_tablet.png' width='60%'>
+
+- Desktop:
+<img src='/code/img/preview_desktop.png' width='60%'>
+
 ## Features
 
 ☑️ Use of the strategy mobile first.
@@ -56,6 +67,18 @@ Follow the steps:
 # Galeria de Arte 📱
 
 En este proyecto se construyo con HTML, SASS, vite y Node.js un microsite para una galería de arte, responsive 👾
+
+## Vistas previas:
+- Mobile:
+<img src='/code/img/preview_mobile.png' width='60%'>
+<img src='/code/img/preview_mobile_location.png' width='60%'>
+
+- Tablet:
+<img src='/code/img/preview_tablet.png' width='60%'>
+
+- Desktop:
+<img src='/code/img/preview_desktop.png' width='60%'>
+
 
 ## Características
 
